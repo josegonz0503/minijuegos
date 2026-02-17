@@ -1,0 +1,51 @@
+/*
+  Estil global (tema clar)
+  - Més semblant a un “wireframe”/mockup net
+  - Contorns marcats, ombres suaus i espaiat generós
+*/
+
+:root{
+  /* Tema minimalista (clar) */
+  --bg: #fafafa;
+  --panel: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: rgba(17,24,39,.14);
+  --borderStrong: rgba(17,24,39,.22);
+  --shadow: 0 1px 0 rgba(17,24,39,.06);
+
+  --accent: #111827;   /* neutre */
+  --accentSoft: rgba(17,24,39,.06);
+  --danger: #dc2626;
+  --ok: #16a34a;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{ height: 100%; }
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a{ color: inherit; text-decoration: none; }
+
+button{ border:0; cursor:pointer; font-weight:600; font-family: inherit; }
+
+.backLink{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-weight: 700;
+}
+.backLink:hover{ background: rgba(17,24,39,.02); }
+
+/* utilitats petites */
+.muted{ color: var(--muted); }

@@ -1,0 +1,91 @@
+/* Simón */
+.simonTop{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+
+.badge{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  font-weight:800;
+}
+
+.badge span{
+  color: var(--muted);
+  font-weight:800;
+}
+
+.simonGrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  max-width: 520px;
+  margin: 14px auto;
+}
+
+.simonBtn{
+  height: 170px;
+  border-radius: 16px;
+  border: 1px solid var(--borderStrong);
+  box-shadow: var(--shadow);
+  cursor:pointer;
+  transition: filter .08s ease;
+}
+
+.simonBtn:disabled{
+  cursor:not-allowed;
+  opacity:.85;
+}
+
+.simonBtn.activo{
+  filter: brightness(10);
+}
+
+.verde{ background: #28c76f; }
+.rojo{ background: #ea5455; }
+.amarillo{ background: #ffcf5c; }
+.azul{ background: #4b7bec; }
+
+.simonActions{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-top: 10px;
+}
+.btnSec{
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:#fff;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.btnLink{
+  display:inline-flex;
+  align-items:center;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:#fff;
+  font-weight:700;
+}
+.btnLink:hover{ background: rgba(17,24,39,.02); }
+
+.hint{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align:center;
+}
+
+@media (max-width: 520px){
+  .simonBtn{ height: 120px; }
+}

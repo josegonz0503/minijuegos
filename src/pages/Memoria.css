@@ -1,0 +1,25 @@
+.grid-carta{
+  display:grid;
+  grid-template-columns: repeat(4, 150px);
+  gap: 18px;
+  justify-content:center;
+  padding: 10px 0 6px;
+}
+
+.notice{
+  margin: 8px 0 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 700;
+}
+
+@media (max-width: 720px){
+  .grid-carta{ grid-template-columns: repeat(3, 120px); gap: 14px; }
+  .carta{ width: 120px; height: 120px; }
+}
+@media (max-width: 420px){
+  .grid-carta{ grid-template-columns: repeat(2, 130px); }
+}

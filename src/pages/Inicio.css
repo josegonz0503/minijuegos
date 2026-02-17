@@ -1,0 +1,60 @@
+.inicioGrid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* target: com el teu dibuix: 3 rectangles grans */
+.inicioTile{
+  min-height: 180px;
+  border-radius: 14px;
+  border: 1px solid var(--borderStrong);
+  background: #fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition: border-color .12s ease, background .12s ease;
+}
+
+.inicioTile:hover{
+  border-color: rgba(17,24,39,.38);
+  background: rgba(17,24,39,.01);
+}
+
+.inicioTileTitle{
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.inicioTileSub{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.inicioNote{
+  margin-top: 16px;
+  color: var(--muted);
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px dashed var(--border);
+  background: #fff;
+}
+
+.inicioNote code{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: rgba(17,24,39,.04);
+  padding: 2px 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(17,24,39,.08);
+  color: var(--text);
+}
+
+@media (max-width: 900px){
+  .inicioGrid{ grid-template-columns: 1fr; }
+  .inicioTile{ min-height: 150px; }
+}

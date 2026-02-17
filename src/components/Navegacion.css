@@ -1,0 +1,43 @@
+.navWrap{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.navLinks{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.navLink{
+  text-decoration:none;
+  color:inherit;
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background: #fff;
+  font-weight:600;
+  font-size:14px;
+}
+
+.navLink.active{
+  background: var(--accentSoft);
+  border-color: rgba(37,99,235,.35);
+}
+
+.navStats{
+  display:flex;
+  gap:8px;
+}
+
+.navPill{
+  padding:8px 10px;
+  border-radius:999px;
+  background: #fff;
+  border:1px solid var(--border);
+  font-size:14px;
+  font-weight:700;
+}

@@ -1,0 +1,99 @@
+/* Recompensas */
+.recompRow{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.card{
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background:#fff;
+  padding: 14px;
+  box-shadow: 0 10px 20px rgba(17,24,39,.06);
+}
+
+.cardTitle{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.bigNumber{
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.lista{
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
+.fila{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 10px;
+}
+
+.cupones{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.cupon{
+  display:flex;
+  justify-content:space-between;
+  gap: 12px;
+  align-items:center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(17,24,39,.02);
+}
+
+.cuponCodigo{
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.btnSec{
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--borderStrong);
+  background: #fff;
+  cursor:pointer;
+  font-weight: 800;
+}
+
+.btnSec:hover{
+  border-color: rgba(37,99,235,.45);
+}
+
+.muted{
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.tag{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background:#fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.tag.usado{
+  opacity:.7;
+}
+
+@media (max-width: 900px){
+  .recompRow{ grid-template-columns: 1fr; }
+}
